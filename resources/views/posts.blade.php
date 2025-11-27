@@ -8,7 +8,9 @@
                     <h2 class="mb-1 text-3xl tracking-tight font-bold text-gray-900">{{ $post['title'] }}</h2>
                 </a>
                 <div class="text-base text-gray-500">
-                    <a href="#">{{ $post['author'] }} | 26 November 2025</a>
+                    <a href="/authors/{{ $post->author->username }}" class="hover:underline">{{ $post->author->name }}</a>          |
+                    26
+                    November 2025
                 </div>
 
                 <p class="my-4 font-light">
